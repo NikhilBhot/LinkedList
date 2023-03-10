@@ -1,4 +1,6 @@
-﻿namespace LinkListExample
+﻿using System.Collections.Generic;
+
+namespace LinkListExample
 {
     internal class Program
     {
@@ -24,8 +26,12 @@
             /*
               * UC-05-Ability to delete the first element in the LinkedList of sequence 56->30->70 - Write pop method
             */
+            Console.WriteLine("\nRemoving First Element");
             linkedListOperation.RemoveFirstNode();
             Console.WriteLine();
+            linkedListOperation.Display();
+            Console.WriteLine("\nRemoving Last Element");
+            linkedListOperation.RemoveLastNode();
             linkedListOperation.Display();
         }
     }

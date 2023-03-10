@@ -92,8 +92,33 @@ namespace LinkListExample
                 this.head = this.head.next;
                 return this.head;
             }   
-           
-         
+        }
+
+        /*
+         * UC-06-Ability to delete the last element in the LinkedList of sequence 56->30->70 - Write popLast method
+         */
+        internal Node RemoveLastNode()
+        {
+          if (head == null)
+            {
+                return null;
+            }
+                
+            if (head.next == null)
+            {
+                return null;
+            }
+            else
+            {
+                Node newNode = head;
+                while (newNode.next.next != null)
+                {
+                    newNode = newNode.next;
+                }
+                newNode.next = null;
+                return head;
+            }   
+            
         }
     }
 }
