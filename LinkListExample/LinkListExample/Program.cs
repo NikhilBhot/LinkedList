@@ -21,6 +21,12 @@
             linkedListOperation.InsertAtParticularPosition(2, 81);
             Console.WriteLine();
             linkedListOperation.Display();
+            /*
+              * UC-05-Ability to delete the first element in the LinkedList of sequence 56->30->70 - Write pop method
+            */
+            linkedListOperation.RemoveFirstNode();
+            Console.WriteLine();
+            linkedListOperation.Display();
         }
     }
 }

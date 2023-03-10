@@ -77,5 +77,23 @@ namespace LinkListExample
             }
             return head;
         }
+
+        /*
+         * UC-05-Ability to delete the first element in the LinkedList of sequence 56->30->70 - Write pop method
+         */
+        internal Node RemoveFirstNode()
+        {
+            if (this.head == null)
+            {
+                return null;
+            }
+            else
+            {
+                this.head = this.head.next;
+                return this.head;
+            }   
+           
+         
+        }
     }
 }
