@@ -33,6 +33,7 @@ namespace LinkListExample
             Console.WriteLine("\nRemoving Last Element");
             linkedListOperation.RemoveLastNode();
             linkedListOperation.Display();
+            linkedListOperation.Search(56);
         }
     }
 }
